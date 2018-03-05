@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home"
+    tools:context="com.kpsoftwaresolutions.mathtable.MainActivity">
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-5910423341335020/2996818457"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true">
+    </com.google.android.gms.ads.AdView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        android:id="@+id/exit_btn"
+        android:layout_above="@id/adView"
+        android:textSize="34sp"
+        android:textColor="#52D6B6"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:id="@+id/about_btn"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:textColor="#E37DC6"
+        android:layout_above="@id/exit_btn"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exam"
+        android:id="@+id/exam_btn"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:textColor="#0282B2"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@id/about_btn"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quiz"
+        android:id="@+id/quiz_btn"
+        android:textSize="34sp"
+        android:textColor="#CA1370"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_above="@id/exam_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Practice"
+        android:id="@+id/practice_btn"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_above="@id/quiz_btn"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FF9251"
+        android:layout_marginBottom="10dp"/>
+
+    <com.facebook.share.widget.LikeView
+        android:id="@+id/like_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/practice_btn"
+        >
+    </com.facebook.share.widget.LikeView>
+
+</RelativeLayout>

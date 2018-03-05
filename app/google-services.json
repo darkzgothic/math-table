@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "665122729777",
+    "firebase_url": "https://mathtable-6935e.firebaseio.com",
+    "project_id": "mathtable-6935e",
+    "storage_bucket": "mathtable-6935e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:665122729777:android:dd178aabe55cde4b",
+        "android_client_info": {
+          "package_name": "com.kpsoftwaresolutions.mathtable"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "665122729777-s0np3ffgo9aq9nrghdaa99pvkb0sf0sm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kpsoftwaresolutions.mathtable",
+            "certificate_hash": "9a2a95fdb9a5905c1698a0b25d4afc6338d4f08f"
+          }
+        },
+        {
+          "client_id": "665122729777-5h2ideuu74qdaaignfo1326qo25ktlru.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBliiQnrQKJoa-tsNKCj9yoWTQO9qxEFEE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "665122729777-5h2ideuu74qdaaignfo1326qo25ktlru.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

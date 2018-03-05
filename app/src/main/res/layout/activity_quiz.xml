@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.kpsoftwaresolutions.mathtable.QuizActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:textSize="40sp"
+                android:textColor="#FF9251"
+                android:layout_marginTop="50dp"
+                android:textStyle="bold"
+                android:id="@+id/txt_num1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:textSize="40sp"
+                android:layout_marginTop="30dp"
+                android:textStyle="bold"
+                android:textColor="#CA1370"
+                android:layout_below="@id/txt_num1"
+                android:id="@+id/txt_num2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="x"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:textSize="40sp"
+                android:textColor="#0282B1"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:textStyle="bold"
+                android:layout_below="@id/txt_num1"
+                android:layout_toLeftOf="@id/txt_num2"
+                android:id="@+id/txt_plus"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/txt_num2"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:background="@color/colorAccent"
+                android:id="@+id/line"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:textSize="40sp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textColor="#01BA91"
+                android:layout_below="@id/line"
+                android:id="@+id/txt_num_result"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout1"
+            android:layout_marginTop="30dp"
+            android:id="@+id/layout2"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="200"
+                android:layout_marginStart="30dp"
+                android:textSize="40sp"
+                android:textColor="@color/color_green"
+                android:textStyle="bold"
+                android:id="@+id/txt_ans1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="200"
+                android:textColor="@color/color_green"
+                android:layout_marginEnd="30dp"
+                android:layout_alignParentEnd="true"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:id="@+id/txt_ans2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="200"
+                android:textColor="@color/color_green"
+                android:layout_marginStart="30dp"
+                android:textSize="40sp"
+                android:layout_below="@id/txt_ans1"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:id="@+id/txt_ans3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="400"
+                android:textColor="@color/color_green"
+                android:layout_marginEnd="30dp"
+                android:textSize="40sp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/txt_ans1"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:id="@+id/txt_ans4"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:id="@+id/btn_home"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/home40px"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-5910423341335020/2996818457"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>
